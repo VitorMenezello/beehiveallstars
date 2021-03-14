@@ -1,0 +1,22 @@
+@import "colors";
+
+html, body {
+  height: 100%;
+  margin: 0;
+  font-family: 'Bebas Neue', cursive !important;
+  background: $primary;
+  color: $black;
+  overflow: hidden;
+
+  a {
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: none;
+    }
+
+    &:focus {
+      outline: none;
+    }
+  }
+}
