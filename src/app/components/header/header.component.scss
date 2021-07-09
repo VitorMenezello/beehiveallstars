@@ -17,10 +17,29 @@ app-header {
     align-items: center;
     margin: 0 8px;
     font-size: 30px;
+    padding: 5px 8px;
+    border-radius: 5px;
 
     img {
       height: 40px;
       margin-right: 16px;
+    }
+
+    &:focus {
+      outline: none;
+      background: rgba($grey, 0.4);
+    }
+
+    &:hover {
+      background: rgba($grey, 0.4);
+    }
+
+    .mat-ripple-element {
+      z-index: -1 !important;
+    }
+
+    .mat-ripple {
+      z-index: 50;
     }
   }
 

@@ -1,8 +1,22 @@
-<div id="logo" routerLink="/home">
+<div id="logo" routerLink="/home" matRipple [matRippleColor]="rippleColor">
   <img src="assets/images/Beehive1-06.png" alt="Beehive Logo" />
   <span>BH ALL STARS</span>
 </div>
 
 <div id="menu">
-  Menu
+  <button mat-button [matMenuTriggerFor]="cheerleading" [class.active]="isRouteActive('cheerleading')">Esporte | Escolas</button>
+  <mat-menu #cheerleading="matMenu">
+    <button mat-menu-item routerLink="/cheerleading/sobre">Sobre o Cheerleading</button>
+    <button mat-menu-item routerLink="/cheerleading/escola">Escola</button>
+    <button mat-menu-item routerLink="/cheerleading/equipe">Equipe</button>
+  </mat-menu>
+
+  <button mat-button [matMenuTriggerFor]="eventos" [class.active]="isRouteActive('eventos')">Eventos</button>
+  <mat-menu #eventos="matMenu">
+    <button mat-menu-item routerLink="/eventos/cursos">Cursos | Camps</button>
+    <button mat-menu-item routerLink="/eventos/apresentacoes">Apresentações | Showcases</button>
+  </mat-menu>
+
+
+  <button mat-button routerLink="/contato" [class.active]="isRouteActive('contato')">Contato</button>
 </div>
