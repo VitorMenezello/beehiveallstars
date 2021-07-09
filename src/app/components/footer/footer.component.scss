@@ -1,0 +1,44 @@
+@import "../../theme/colors";
+
+app-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  bottom: 0;
+  width: calc(100% - 100px);
+  height: 120px;
+  padding: 0 50px;
+  background: $black;
+  color: $white;
+
+  #footer-logo {
+    width: 180px;
+
+    img {
+      height: 75px;
+    }
+  }
+
+  #social-media {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    #icons {
+      margin-top: 8px;
+    }
+
+    a {
+      margin: 0 4px;
+    }
+
+    .mat-icon-button {
+      color: $primary;
+    }
+  }
+
+  #copyright {
+    width: 180px;
+  }
+}
