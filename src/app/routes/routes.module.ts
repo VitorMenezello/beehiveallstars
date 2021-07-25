@@ -8,7 +8,9 @@ import {CheerleadingModule} from './cheerleading/cheerleading.module';
 import {CheerleadingComponent} from './cheerleading/cheerleading.component';
 import {EquipeComponent} from './cheerleading/equipe/equipe.component';
 import {EscolaComponent} from './cheerleading/escola/escola.component';
-import {SobreComponent} from './cheerleading/sobre/sobre.component';
+
+import {SobreModule} from './sobre/sobre.module';
+import {SobreComponent} from './sobre/sobre.component';
 
 import {EventosModule} from './eventos/eventos.module';
 import {EventosComponent} from './eventos/eventos.component';
@@ -23,27 +25,27 @@ const appRoutes: Routes = [
     path: '',
     component: HomeComponent
   },
+  // {
+  //   path: 'cheerleading',
+  //   component: CheerleadingComponent,
+  //   children: [
+  //     {
+  //       path: 'equipe',
+  //       component: EquipeComponent,
+  //     },
+  //     {
+  //       path: 'escola',
+  //       component: EscolaComponent,
+  //     },
+  //     {
+  //       path: '**',
+  //       redirectTo: 'equipe'
+  //     }
+  //   ]
+  // },
   {
-    path: 'cheerleading',
-    component: CheerleadingComponent,
-    children: [
-      {
-        path: 'equipe',
-        component: EquipeComponent,
-      },
-      {
-        path: 'escola',
-        component: EscolaComponent,
-      },
-      {
-        path: 'sobre',
-        component: SobreComponent,
-      },
-      {
-        path: '**',
-        redirectTo: 'equipe'
-      }
-    ]
+    path: 'sobre',
+    component: SobreComponent,
   },
   {
     path: 'eventos',
@@ -82,7 +84,7 @@ const routerOptions: ExtraOptions = {
   imports: [
     RouterModule.forRoot(appRoutes, routerOptions),
     HomeModule,
-    CheerleadingModule,
+    SobreModule,
     EventosModule,
     ContatoModule,
   ],
@@ -95,5 +97,6 @@ const routerOptions: ExtraOptions = {
     ContatoModule,
   ]
 })
+
 export class RoutesModule {
 }

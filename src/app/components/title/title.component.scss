@@ -1,0 +1,17 @@
+@import "../../theme/colors";
+
+:host {
+	// background-image: url('~src/assets/images/capa-background.jpg');
+	//  background-position: center center;
+	height: 376px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	#titulo {
+		flex: 1;
+		color: $white;
+		font-size: 50px;
+		text-align: center;
+	}
+}

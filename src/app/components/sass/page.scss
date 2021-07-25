@@ -1,0 +1,56 @@
+@import "../../theme/colors";
+
+:host {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+
+  section {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1280px;
+
+    &:not(:last-child) {
+      border-bottom: solid 3px $black;
+    }
+
+    h2 {
+      font-family: "Bebas Neue", cursive !important;
+      letter-spacing: 0.5px;
+      text-align: center;
+      font-size: 50px;
+      margin: 40px 0;
+    }
+
+    h3 {
+      font-family: "Bebas Neue", cursive !important;
+      letter-spacing: 0.5px;
+      text-align: center;
+      font-size: 35px;
+      margin: 40px 0;
+    }
+
+    h4 {
+      font-size: 16px;
+      font-weight: bold;
+      margin: 25px 0;
+    }
+
+    p {
+      text-align: justify;
+      font-family: "Arial", sans-serif;
+      font-size: 16px;
+      margin: 0 0 22px;
+    }
+
+    ul {
+      font-family: "Arial", sans-serif;
+      font-size: 16px;
+      margin: 0 0 22px;
+
+      li {
+        margin: 0 0 5px;
+      }
+    }
+  }
+}

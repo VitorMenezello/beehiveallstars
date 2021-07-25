@@ -1,6 +1,6 @@
 @import "../../theme/colors";
 
-app-header {
+:host {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -19,6 +19,12 @@ app-header {
     font-size: 30px;
     padding: 5px 8px;
     border-radius: 5px;
+    transition: all 0.2s ease-in-out;
+
+    span {
+      margin-top: 2.5px;
+      letter-spacing: 2px;
+    }
 
     img {
       height: 40px;
@@ -46,5 +52,18 @@ app-header {
   #menu {
     margin: 0 8px;
     font-size: 20px;
+
+    .mat-button {
+      font-family: "Bebas Neue", cursive !important;
+      letter-spacing: 0.5px;
+
+      &:not(:last-child) {
+        margin-right: 5px;
+      }
+
+      &:not(:first-child) {
+        margin-left: 5px;
+      }
+    }
   }
 }

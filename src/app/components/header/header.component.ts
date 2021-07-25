@@ -1,12 +1,11 @@
-import {Component, ViewEncapsulation} from '@angular/core';
+import {Component} from '@angular/core';
 import {Router} from '@angular/router';
 import {colorOpacity, COLORS} from '../../helpers/colors';
 
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
-  styleUrls: ['./header.component.scss'],
-  encapsulation: ViewEncapsulation.None
+  styleUrls: ['./header.component.scss']
 })
 
 export class HeaderComponent {
@@ -18,7 +17,6 @@ export class HeaderComponent {
   }
 
   isRouteActive(route: string): boolean {
-    console.log(route, this.router.isActive(route, false));
     return this.router.isActive(route, false);
   }
 }

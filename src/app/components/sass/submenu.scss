@@ -1,0 +1,11 @@
+.submenu {
+	margin-top: 12px;
+	border-radius: 0 !important;
+	background: $black;
+
+	.mat-menu-item {
+		color: $white;
+		font-family: "Bebas Neue", cursive !important;
+		letter-spacing: 0.5px;
+	}
+}

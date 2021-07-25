@@ -1,6 +1,6 @@
 @import "../../theme/colors";
 
-app-footer {
+:host {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -24,6 +24,7 @@ app-footer {
     display: flex;
     flex-direction: column;
     align-items: center;
+    letter-spacing: 0.5px;
 
     #icons {
       margin-top: 8px;
@@ -40,5 +41,6 @@ app-footer {
 
   #copyright {
     width: 180px;
+    letter-spacing: 0.5px;
   }
 }

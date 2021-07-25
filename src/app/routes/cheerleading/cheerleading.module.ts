@@ -5,14 +5,12 @@ import {RouterModule} from '@angular/router';
 import {CheerleadingComponent} from './cheerleading.component';
 import {EquipeComponent} from './equipe/equipe.component';
 import {EscolaComponent} from './escola/escola.component';
-import {SobreComponent} from './sobre/sobre.component';
 
 @NgModule({
   declarations: [
     CheerleadingComponent,
     EquipeComponent,
     EscolaComponent,
-    SobreComponent,
   ],
   imports: [
     CommonModule,
@@ -22,7 +20,6 @@ import {SobreComponent} from './sobre/sobre.component';
     CheerleadingComponent,
     EquipeComponent,
     EscolaComponent,
-    SobreComponent,
   ]
 })
 
