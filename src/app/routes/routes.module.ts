@@ -16,6 +16,7 @@ import {EventosModule} from './eventos/eventos.module';
 import {EventosComponent} from './eventos/eventos.component';
 import {ApresentacoesComponent} from './eventos/apresentacoes/apresentacoes.component';
 import {CursosComponent} from './eventos/cursos/cursos.component';
+import {GymComponent} from './eventos/gym/gym.component';
 
 import {ContatoModule} from './contato/contato.module';
 import {ContatoComponent} from './contato/contato.component';
@@ -51,6 +52,10 @@ const appRoutes: Routes = [
     path: 'eventos',
     component: EventosComponent,
     children: [
+      {
+        path: 'open-gym',
+        component: GymComponent,
+      },
       {
         path: 'apresentacoes',
         component: ApresentacoesComponent,

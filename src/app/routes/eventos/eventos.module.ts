@@ -7,12 +7,14 @@ import {TitleModule} from '../../components/title/title.module';
 import {EventosComponent} from './eventos.component';
 import {ApresentacoesComponent} from './apresentacoes/apresentacoes.component';
 import {CursosComponent} from './cursos/cursos.component';
+import {GymComponent} from './gym/gym.component';
 
 @NgModule({
   declarations: [
     EventosComponent,
     ApresentacoesComponent,
     CursosComponent,
+    GymComponent,
   ],
   imports: [
     CommonModule,
@@ -23,6 +25,7 @@ import {CursosComponent} from './cursos/cursos.component';
     EventosComponent,
     ApresentacoesComponent,
     CursosComponent,
+    GymComponent,
   ]
 })
 

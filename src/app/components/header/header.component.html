@@ -16,10 +16,10 @@
 
   <button mat-button [matMenuTriggerFor]="eventos" [class.active]="isRouteActive('eventos')">Eventos</button>
   <mat-menu #eventos="matMenu" class="submenu">
+    <button mat-menu-item routerLink="/eventos/open-gym">Open Gym</button>
     <button mat-menu-item routerLink="/eventos/cursos">Cursos | Camps</button>
     <button mat-menu-item routerLink="/eventos/apresentacoes">Apresentações | Showcases</button>
   </mat-menu>
 
-
-  <button mat-button routerLink="/contato" [class.active]="isRouteActive('contato')">Contato</button>
+  <!-- <button mat-button routerLink="/contato" [class.active]="isRouteActive('contato')">Contato</button> -->
 </div>
